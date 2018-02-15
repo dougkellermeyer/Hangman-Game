@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+
+    <title>Hangman - NFL</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <!-- Link to style.css file, opted to use Bootstrap
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" /> 
+    -->
+
+    <script src="game.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+            <div class ="jumbotron">
+            <h1> Hangman - Sports Teams</h1>
+            </div>
+            <h2>Remaining attemps:</h2>
+            <ul class="hangman-words">
+                    <li class="guess-box"></li>
+                    <li class="guess-box"></li>
+                    <li class="guess-box"></li>
+                    <li class="guess-box"></li>
+                    <li class="guess-box"></li>
+                    <li class="guess-box"></li>
+                  </ul>
+            <h3 class="hangman-letters"></h3>
+            <p class="guessed-letters"></p>
+            <input class="text-value" type="text" maxlength="1" onchange="setGuess(this.value)">
+      <button class="text-button" onclick="checkGuess()"></button>
+
+        <p class="letters-guessed"></p>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
